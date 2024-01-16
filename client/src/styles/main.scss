@@ -1,0 +1,21 @@
+/* COMPONENTS */
+@import "../components/Navbar/Navbar.scss";
+
+/* PAGES */
+@import "../pages/Add/Add.sass",
+        "../pages/Gig/Gig.sass",
+        "../pages/Gigs/Gigs.sass",
+        "../pages/Home/Home.sass",
+        "../pages/Login/Login.sass",
+        "../pages/Message/Message.sass",
+        "../pages/Messages/Messages.sass",
+        "../pages/MyGigs/MyGigs.sass",
+        "../pages/Orders/Orders.sass",
+        "../pages/Register/Register.sass";
+
+/* GLOBAL STYLE */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Login.sass";
+//import "./Login.sass";
 
 const Login = () => {
   return <div className="login">Login</div>;

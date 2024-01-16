@@ -1,5 +1,5 @@
 import React from "react";
-import "./Add.sass";
+//import "./Add.sass";
 
 const Add = () => {
   return <div className="add">Add</div>;

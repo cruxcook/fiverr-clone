@@ -1,5 +1,5 @@
 import React from "react";
-import "./Orders.sass";
+//import "./Orders.sass";
 
 const Orders = () => {
   return <div className="orders">Orders</div>;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.sass";
+//import "./Home.sass";
 
 const Home = () => {
   return <div className="home">Home</div>;
