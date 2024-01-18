@@ -16,6 +16,12 @@ const Navbar = () => {
     };
   }, []);
 
+  const currentUser = {
+    id: 1,
+    userName: "Crux Cook",
+    isSeller: true,
+  };
+
   return (
     <div className={active ? "navbar active" : "navbar"}>
       <div className="container">
@@ -27,9 +33,26 @@ const Navbar = () => {
           <span>Fiverr Pro</span>
           <span>Explore</span>
           <span>English</span>
-          <span>Become a Seller</span>
+          {!currentUser?.isSeller && <span>Become a Seller</span>}
           <span>Sign in</span>
-          <button>Join</button>
+          {!currentUser && <button>Join</button>}
+          {currentUser && (
+            <div className="user">
+              <img src="" alt="" />
+              <span>{currentUser?.userName}</span>
+              <div className="options">
+                {currentUser?.isSeller && (
+                  <>
+                    <span>Gigs</span>
+                    <span>Add New Gig</span>
+                  </>
+                )}
+                <span>Orders</span>
+                <span>Messages</span>
+                <span>Logout</span>
+              </div>
+            </div>
+          )}
         </div>
       </div>
       {active && (
